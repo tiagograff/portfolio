@@ -12,6 +12,9 @@ body {
   height: 100%;
   width: 100%;
   color: #E7F6F2;
+  font-size: 1rem;
+  list-style: none;
+  text-decoration: none;
 }
 
 .header-banner {
@@ -38,6 +41,31 @@ body {
 }
 .header-profile-img:hover {
   border-color: #A5C9CA;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-bottom: #A5C9CA solid 2px;
+}
+.welcome-shine {
+  color: #395B64;
+}
+.welcome-apresentation-text {
+  margin: 0 15%;
+  font-size: 1.25rem;
+}
+.welcome-apresentation-text-shine {
+  color: #A5C9CA;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

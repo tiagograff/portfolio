@@ -1,0 +1,22 @@
+@use '../abstract/_variables'
+
+.welcome
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &-title
+        font-size: variables.$font-size*4
+        font-weight: 600
+        margin-bottom: variables.$spacing
+        padding: 2rem
+        border-bottom: variables.$secondary-color solid 2px
+    &-shine
+        color: variables.$primary-color
+    &-apresentation
+        &-text
+            margin: 0 15%
+            font-size: variables.$font-size*1.25
+            &-shine
+                color: variables.$secondary-color
+                text-decoration: none

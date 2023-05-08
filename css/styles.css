@@ -101,4 +101,28 @@ body {
   color: #E7F6F2;
 }
 
+.experience-title {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #A5C9CA;
+  margin-left: 2rem;
+}
+.experience-title::before {
+  content: "• ";
+}
+.experience-text {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 4rem 2rem;
+}
+.experience-text-p {
+  padding: 0 2rem;
+  border-left: 1px solid #395B64;
+}
+
 /*# sourceMappingURL=styles.css.map */

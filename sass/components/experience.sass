@@ -1,0 +1,17 @@
+@use '../abstract/variables'
+@use '../abstract/mixins'
+
+.experience
+    &-title
+        @include mixins.sub-title
+    &-text
+        display: grid
+        grid-template-rows: 1fr
+        grid-template-columns: 1fr 1fr 1fr
+        justify-content: center
+        align-items: center
+        gap: 2rem
+        margin: variables.$spacing 2rem
+        &-p
+            padding: 0 2rem
+            border-left: 1px solid variables.$primary-color

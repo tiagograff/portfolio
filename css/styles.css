@@ -176,4 +176,37 @@ li {
   align-items: center;
 }
 
+.contact-title {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #A5C9CA;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+.contact-title::before {
+  content: "• ";
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-list-item {
+  justify-content: center;
+  width: 50%;
+  border: 2px solid #E7F6F2;
+  border-radius: 20px;
+  padding: 15px 50px;
+  margin-bottom: 2rem;
+}
+.contact-list-item-link {
+  color: #E7F6F2;
+  font-weight: 600;
+}
+.contact-list-item:hover {
+  background: #2C3333;
+  border-color: #2C3333;
+}
+
 /*# sourceMappingURL=styles.css.map */

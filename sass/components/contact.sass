@@ -1,0 +1,25 @@
+@use '../abstract/_variables'
+@use '../abstract/_mixins'
+
+.contact
+    &-title
+        @include mixins.sub-title
+        margin-bottom: variables.$spacing
+    &-list
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-item
+            justify-content: center
+            width: 50%
+            border: 2px solid variables.$font-color
+            border-radius: 20px
+            padding: 15px 50px
+            margin-bottom: 2rem
+            &-link 
+                color: variables.$font-color
+                font-weight: 600         
+            &:hover
+                background: variables.$terciary-color
+                border-color: variables.$terciary-color
+        

@@ -125,4 +125,55 @@ body {
   border-left: 1px solid #395B64;
 }
 
+.certificates-title {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #A5C9CA;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+.certificates-title::before {
+  content: "• ";
+}
+
+.certificates-cards-list-card {
+  border: 4px dashed #395B64;
+  border-radius: 20px;
+  background: linear-gradient(126deg, rgb(231, 246, 242) 0%, rgb(57, 91, 100) 10%, rgb(231, 246, 242) 50%, rgb(255, 255, 255) 80%, rgb(57, 91, 100) 100%);
+  opacity: 0.6;
+  padding: 20px;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #395B64;
+  font-weight: 300;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.certificates-cards-list-card:hover {
+  background: #395B64;
+  color: #E7F6F2;
+}
+.certificates-cards-list-card-img {
+  width: 150px;
+  height: 150px;
+}
+.certificates-cards-list-card-infos-title {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-weight: 300;
+}
+
+li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 /*# sourceMappingURL=styles.css.map */

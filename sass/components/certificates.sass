@@ -1,0 +1,45 @@
+@use '../abstract/variables'
+@use '../abstract/mixins'
+
+.certificates-title
+    @include mixins.sub-title
+    margin-bottom: variables.$spacing
+
+.certificates
+    &-cards
+        &-list
+            &-card
+                border: 4px dashed variables.$primary-color
+                border-radius: 20px
+                background: variables.$card-background
+                opacity: 0.6
+                padding: 20px
+                min-width: 250px
+                max-width: 250px                
+                min-height: 350px
+                text-align: center
+                display: flex
+                flex-direction: column
+                color: variables.$primary-color
+                font-weight: 300
+                margin-left: 2rem 
+                margin-top: 2rem             
+                &:hover
+                    background: variables.$primary-color
+                    color: variables.$font-color
+                &-img
+                    width: 150px
+                    height: 150px
+                &-infos
+                    &-title
+                        font-size: variables.$font-size*1.5
+                        margin: 1.5rem 0
+                        font-weight: 300
+
+li
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    

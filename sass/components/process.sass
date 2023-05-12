@@ -1,0 +1,20 @@
+@use '../abstract/variables'
+@use '../abstract/mixins'
+
+.process   
+    &-title
+        @include mixins.sub-title
+    &-bar
+        margin-left: 25%
+        justify-content: center
+        width: 50%
+        height: 25px
+        border: 2px solid variables.$font-color
+        border-radius: 20px
+        margin: variables.$spacing 25%  variables.$spacing 25%
+        &-loading
+            height: 100%
+            border-radius: 20px
+            background-color: variables.$font-color
+            &:hover
+                background-color: variables.$terciary-color

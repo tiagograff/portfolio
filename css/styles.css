@@ -267,4 +267,32 @@ li {
   border-color: #2C3333;
 }
 
+.process-title {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #A5C9CA;
+  margin-left: 2rem;
+}
+.process-title::before {
+  content: "• ";
+}
+.process-bar {
+  margin-left: 25%;
+  justify-content: center;
+  width: 50%;
+  height: 25px;
+  border: 2px solid #E7F6F2;
+  border-radius: 20px;
+  margin: 4rem 25% 4rem 25%;
+}
+.process-bar-loading {
+  height: 100%;
+  border-radius: 20px;
+  background-color: #E7F6F2;
+}
+.process-bar-loading:hover {
+  background-color: #2C3333;
+}
+
 /*# sourceMappingURL=styles.css.map */

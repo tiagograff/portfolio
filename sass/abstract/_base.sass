@@ -1,4 +1,5 @@
 @use '../abstract/variables'
+@use '../abstract/mixins'
 *
     margin: 0
     padding: 0
@@ -9,6 +10,8 @@
 
 body
     background: variables.$background-color
+    @include mixins.responsive-845
+        background: variables.$background-responsive
     background-repeat: no-repeat
     background-size: cover
     height: 100%

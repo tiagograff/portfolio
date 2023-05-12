@@ -7,7 +7,29 @@
 .projects
     display: flex
     justify-content: center
+    @include mixins.responsive-845
+        margin-top: variables.$spacing
+        display: flex
+        flex-wrap: wrap
+        justify-content: start
+        margin-left: 5em
+        align-items: start
+    &-menu
+        &-item 
+        @include mixins.responsive-845
+            text-align: left
+            justify-content: start   
+            &-link 
+            @include mixins.responsive-830
+                justify-content: start
+                align-items: left
+            
 
     .project
         @include mixins.project_list
+        @include mixins.responsive-1250
+            margin: 0 10px
+        @include mixins.responsive-845
+             
+        
         

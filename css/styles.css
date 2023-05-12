@@ -18,6 +18,11 @@ body {
   font-size: 1rem;
   text-decoration: none;
 }
+@media (max-width: 845px) {
+  body {
+    background: linear-gradient(126deg, rgb(57, 91, 100) 0%, rgb(44, 51, 51) 20%, rgb(57, 91, 100) 50%, rgb(44, 51, 51) 80%, rgb(57, 91, 100) 100%);
+  }
+}
 
 .header-banner {
   width: 100%;
@@ -58,6 +63,17 @@ body {
   padding: 2rem;
   border-bottom: #A5C9CA solid 2px;
 }
+@media (max-width: 1250px) {
+  .welcome-title {
+    width: 75%;
+    text-align: center;
+  }
+}
+@media (max-width: 664px) {
+  .welcome-title {
+    font-size: 2rem;
+  }
+}
 .welcome-shine {
   color: #395B64;
 }
@@ -85,6 +101,28 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 845px) {
+  .projects {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-left: 5em;
+    align-items: start;
+  }
+}
+@media (max-width: 845px) {
+  .projects-menu {
+    text-align: left;
+    justify-content: start;
+  }
+}
+@media (max-width: 845px) and (max-width: 845px) {
+  .projects-menu {
+    justify-content: start;
+    align-items: left;
+  }
+}
 .projects .project {
   margin-top: 4rem;
   margin-right: 10rem;
@@ -100,7 +138,11 @@ body {
 .projects .project-menu-item-link {
   color: #E7F6F2;
 }
-
+@media (max-width: 1250px) {
+  .projects .project {
+    margin: 0 10px;
+  }
+}
 .experience-title {
   margin-top: 4rem;
   font-size: 2.5rem;
@@ -119,6 +161,12 @@ body {
   align-items: center;
   gap: 2rem;
   margin: 4rem 2rem;
+}
+@media (max-width: 845px) {
+  .experience-text {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 .experience-text-p {
   padding: 0 2rem;
@@ -154,6 +202,11 @@ body {
   margin-left: 2rem;
   margin-top: 2rem;
 }
+@media (max-width: 845px) {
+  .certificates-cards-list-card {
+    margin-left: 0;
+  }
+}
 .certificates-cards-list-card:hover {
   background: #395B64;
   color: #E7F6F2;
@@ -174,6 +227,11 @@ li {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+}
+@media (max-width: 845px) {
+  li {
+    justify-content: space-evenly;
+  }
 }
 
 .contact-title {

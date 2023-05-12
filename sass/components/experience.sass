@@ -12,6 +12,9 @@
         align-items: center
         gap: 2rem
         margin: variables.$spacing 2rem
+        @include mixins.responsive-845
+            grid-template-columns: 1fr
+            grid-template-rows: 1fr 1fr 1fr
         &-p
             padding: 0 2rem
             border-left: 1px solid variables.$primary-color

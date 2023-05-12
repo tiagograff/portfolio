@@ -11,7 +11,8 @@
         margin-bottom: variables.$spacing
         &-item
             &-link
-                color: variables.$font-color    
+                color: variables.$font-color
+                    
 
 @mixin sub-title
     margin-top: variables.$spacing
@@ -21,3 +22,19 @@
     margin-left: 2rem
     &::before
         content: '• '
+
+@mixin responsive-1250
+    @media(max-width: 1250px)
+        @content
+
+@mixin responsive-845
+    @media(max-width: 845px)
+        @content
+
+@mixin responsive-830
+    @media(max-width: 845px)
+        @content
+
+@mixin responsive-664
+    @media(max-width: 664px)
+        @content

@@ -23,7 +23,9 @@
                 color: variables.$primary-color
                 font-weight: 300
                 margin-left: 2rem 
-                margin-top: 2rem             
+                margin-top: 2rem
+                @include mixins.responsive-845
+                    margin-left: 0
                 &:hover
                     background: variables.$primary-color
                     color: variables.$font-color
@@ -42,4 +44,6 @@ li
     flex-direction: row
     justify-content: flex-start
     align-items: center
+    @include mixins.responsive-845
+        justify-content: space-evenly                         
     

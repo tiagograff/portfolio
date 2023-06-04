@@ -1,5 +1,7 @@
 @use '../abstract/variables'
 
+//list
+
 @mixin project_list
     margin-top: variables.$spacing
     margin-right: 10rem
@@ -12,7 +14,8 @@
         &-item
             &-link
                 color: variables.$font-color
-                    
+
+//title                    
 
 @mixin sub-title
     margin-top: variables.$spacing
@@ -22,6 +25,31 @@
     margin-left: 2rem
     &::before
         content: '• '
+
+// link
+
+@mixin list-link
+    &-list
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-item
+            justify-content: center
+            width: 50%
+            border: 2px solid variables.$font-color
+            border-radius: 20px
+            padding: 15px 50px
+            margin-bottom: 2rem
+            &:hover
+                background: variables.$font-color
+                border-color: variables.$font-color
+            &-link 
+                color: variables.$font-color
+                font-weight: 600
+                color: variables.$secondary-color 
+    
+
+//responsivity
 
 @mixin responsive-1250
     @media(max-width: 1250px)
@@ -37,4 +65,8 @@
 
 @mixin responsive-664
     @media(max-width: 664px)
+        @content
+
+@mixin responsive-547
+    @media(max-width: 547px)
         @content
